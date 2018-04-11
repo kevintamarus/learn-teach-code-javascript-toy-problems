@@ -10,8 +10,8 @@ const areThereDuplicates = arr => {
   // your code here
 }
 
-// Can you solve it in O(n)(linear) time constraint?
+// Can you solve it in O(1) constant time constraint?
 
-const areThereDuplicates = arr => {
+const areThereDuplicates2 = arr => {
   // your code here
 }
