@@ -7,4 +7,4 @@ const reverseString = str => {
   //your code here
 }
 
-//what is the time constraint( O(n) ) for your function?
+//what is the time constraint for your function?
