@@ -4,6 +4,6 @@
 // [a, b] => [[a, b], [b, a]]
 // [a, a, a] => [[a, a, a], [a, a, a], [a, a, a], [a, a, a], [a, a, a], [a, a, a]]
 
-const allStringPermutations = str => {
+const allArrayPermutations = arr => {
   // your code here
 }
