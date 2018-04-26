@@ -36,5 +36,26 @@ const drinks = [
 ]
 
 const totalPrice = drinks => {
-  //your code here
+  return totalAfterTax(drinks.reduce((acc, drink) => (
+    acc + calculateDrinkPrice(drink)
+  ),0));
+}
+
+const calculateDrinkPrice = obj => {
+  if(obj.size === 'small') {
+    return obj.price;
+  } else if (obj.size === 'medium') {
+    return obj.price * 1.2;
+  } else {
+    return obj.price * 1.4;
+  }
+}
+
+const totalAfterTax = subTotal => {
+  return subTotal * 1.09;
+}
+
+const convertNumberToCurrency = number => {
+  n = Math.floor(number);
+  return `$${Math.floor(n / 100)}.${Math.floor((n % 100)/10)}${n % 10}`;
 }
