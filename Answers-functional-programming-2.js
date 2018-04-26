@@ -35,6 +35,28 @@ const drinks = [
   }
 ]
 
+// standard
+
+const totalPrice = drinks => {
+  let subTotal = 0;
+  for(let i = 0; i < drinks.length; i++) {
+    let price = drinks[i].price;
+    if(drinks[i].size === 'medium') {
+      price = price * 1.2;
+    } else if(drinks[i].size === 'large') {
+      price = price * 1.4;
+    }
+    subTotal += price;
+  }
+  return Math.floor(totalAfterTax(subTotal));
+}
+
+const totalAfterTax = subTotal => {
+  return subTotal * 1.09;
+}
+
+// advanced
+
 const totalPrice = drinks => {
   return totalAfterTax(drinks.reduce((acc, drink) => (
     acc + calculateDrinkPrice(drink)
