@@ -9,5 +9,11 @@ check for: numbers, strings, booleans, functions, arrays, objects
 */
 
 function typeCheck(input) {
-  // your code here
+  if(arguments.length === 0) {
+    return 'no input provided';
+  }
+  if(Array.isArray(input)) {
+    return 'array';
+  }
+  return typeof input;
 }
