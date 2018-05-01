@@ -6,18 +6,22 @@ Use a series of functions to complete this challenge!
 */
 
 const longestPalindrome = sentence => {
-  // your code here
+  let palindromes = sentence.split(' ').filter( x => isPalindrome(x)).sort(sortAscendingByLength);
+  return palindromes[palindromes.length - 1];
 }
 
 const reverseString = str => {
-  // your code here
+  return str.split('').reverse().join('');
 }
 
 const isPalindrome = str => {
-  // your code here
+  if(reverseString(str) === str) {
+    return true;
+  }
+  return false;
 }
 
 // optional function
 const sortAscendingByLength = (a, b) => {
-  // your code here
+  return a.length > b.length;
 }
