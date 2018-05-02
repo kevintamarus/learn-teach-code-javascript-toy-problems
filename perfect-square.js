@@ -12,3 +12,8 @@ Write a function that will return true if the input is a perfect square, and wil
 const isPerfectSquare = n => {
   // your code here
 }
+
+// can you solve it using recursion?
+const isPerfectSquare = n => {
+  // your code here
+}
