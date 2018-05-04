@@ -10,9 +10,8 @@ Write a function that will return true if the input is a perfect square, and wil
 */
 
 const isPerfectSquare = n => {
-  if(n === 0 || n === 1) {
-    return true;
-  }
+  if(n === 0 || n === 1) { return true; }
+  if(n < 0) { return false; }
   let count = 2;
   while(count <= n) {
     if(count * count === n) {
@@ -27,9 +26,8 @@ const isPerfectSquare = n => {
 
 // can you solve it using recursion?
 const isPerfectSquare = n => {
-  if(n === 0 || n === 1) {
-    return true;
-  }
+  if(n === 0 || n === 1) { return true; }
+  if(n < 0) { return false; }
   const recursion = num => {
     if(num * num === n) {
       return true;
