@@ -1,7 +1,7 @@
 /*
 Given an array of numbers, write a function that will find the max positive difference in that array
 
-[1, 2, 3, 4, 5] => 1
+[1, 2, 3, 4, 5] => 4
 [5, 3, 2, 1, 8] => 7
 [4, 9, 2, 3, 6] => 5
 */
