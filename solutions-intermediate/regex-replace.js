@@ -9,5 +9,5 @@ hint: you can use RegEx
 const exampleSentence = "These words cannot foo me"
 
 const regexReplace = sentence => {
-  // your code here
+  return sentence.replace(new RegExp('foo'), 'bar');
 }
