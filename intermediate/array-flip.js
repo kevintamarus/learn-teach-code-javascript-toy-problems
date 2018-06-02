@@ -14,9 +14,11 @@ output:
   [6, 5, 4],
   [3, 2, 1]
 ]
+
+What is the time complexity of your solution?
 */
 
-//sample array
+// sample array
 const array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
 const flipArray = arr => {
