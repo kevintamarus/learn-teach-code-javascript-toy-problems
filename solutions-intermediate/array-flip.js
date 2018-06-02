@@ -20,5 +20,7 @@ output:
 const array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
 const flipArray = arr => {
-  // your code here
+  const results = [];
+  arr.forEach(nestedArray => results.unshift(nestedArray.reverse()));
+  return results;
 }
