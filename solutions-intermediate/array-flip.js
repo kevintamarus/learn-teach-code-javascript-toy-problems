@@ -22,8 +22,12 @@ What is the time complexity of your solution?
 const array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
 // time complexity is O(n) linear
+// const flipArray = arr => {
+//   const results = [];
+//   arr.forEach(nestedArray => results.unshift(nestedArray.reverse()));
+//   return results;
+// }
+
 const flipArray = arr => {
-  const results = [];
-  arr.forEach(nestedArray => results.unshift(nestedArray.reverse()));
-  return results;
+  return arr.map(nestedArray => nestedArray.reverse()).reverse();
 }
